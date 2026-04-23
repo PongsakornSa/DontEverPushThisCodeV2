@@ -152,7 +152,7 @@ jobs:
 
       - name: Upload Trivy artifact
         if: always()
-        uses: actions/upload-artifact@v4   # TODO#21
+        uses: actions/upload-artifact@v4   # TODO#21.
         with:
           name: trivy-report
           path: trivy-results.sarif
